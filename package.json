@@ -1,0 +1,20 @@
+{
+  "name": "reginasantos-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chrome": "testcafe chrome tests/ --reporter spec,html:report.html",
+    "firefox": "testcafe firefox tests/ --reporter html",
+    "edge": "testcafe edge tests/ --reporter html"
+  },
+  "author": "Regina Santos",
+  "license": "ISC",
+  "devDependencies": {
+    "testcafe": "^1.19.0"
+  },
+  "dependencies": {
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}
