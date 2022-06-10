@@ -16,6 +16,7 @@ class DressPage {
         this.cartDropDown = Selector("#header div:nth-child(3) > div > a")
         this.cartXButton = Selector(".ajax_cart_block_remove_link")
         this.cartQuantity = Selector(".ajax_cart_quantity")
+        this.CategoryBar = Selector(".breadcrumb")
     }
 
     getImageClothe(imageOption){

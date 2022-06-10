@@ -5,7 +5,7 @@ import DressPage from '../po/DressPage'
 import ContactUs from '../po/ContactUs'
 
 
-fixture`Getting Started`
+fixture`Test the Automation Practice Page`
 
     .page`http://automationpractice.com/index.php`
 
@@ -37,7 +37,7 @@ test('Verify the user is able to selects a suggestion from the search box.', asy
         .typeText(DressPage.searchBar, "Printed")
     const printed = DressPage.searchResult
     await t.click(printed)
-    const categoryBar = Selector(".breadcrumb").child("a")
+    const categoryBar = DressPage.CategoryBar.child("a")
     for (let i = 0; i < await categoryBar.count; i++) { console.log(await categoryBar.nth(i).innerText) }
 
 });
